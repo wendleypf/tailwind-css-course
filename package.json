@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "npx tailwindcss -i src/styles.css -o public/styles.css"
+    "pretestbuild-css": "rm public/output.css",
+    "build-css": "npx tailwindcss -i ./src/styles.css -o ./public/output.css --watch"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "tailwindcss": "^3.2.0"
   }
 }
